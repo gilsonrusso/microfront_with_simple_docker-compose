@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  app-react:
+    container_name: app-react
+    build:
+      context: ./react-app
+    ports:
+      - "80:80"
+  app-angular:
+    container_name: app-angular
+    build:
+      context: ./angular-app
+    ports:
+      - "81:80"
+  app-vue:
+    container_name: app-vue
+    build:
+      context: ./vue-app
+    ports:
+      - "82:80"
